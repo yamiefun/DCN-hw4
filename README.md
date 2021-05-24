@@ -1,7 +1,7 @@
 # DCN Project 4 Report
 ## Implementation
 ### Method 1
-![](https://i.imgur.com/v8A7ghp.png =400x)
+![](https://i.imgur.com/v8A7ghp.png)
 
 The main idea of this method is that the network architecture is fixed, so the leaf switchs, i.e., the switchs directly connect to hosts, can decide whether to forward the broadcast packet to a specific host if the host is in same tenant with the source or to drop it.
 
@@ -57,7 +57,7 @@ The main idea of this method is that the network architecture is fixed, so the l
     ```
 
 ### Method 2
-![](https://i.imgur.com/wWEapbu.png =400x)
+![](https://i.imgur.com/wWEapbu.png)
 
 The main idea of this method is that when a switch receive a broadcast packet, it will first find out all the destinations which are in the same tenant with the source host, and add their corresponding output ports to flow table.  
 
