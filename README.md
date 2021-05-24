@@ -1,4 +1,9 @@
 # DCN Project 4 Report
+
+## Introduction
+The purpose of this project is to implement multi-tenancy in data center network architecture.
+A tenant is a group of users who share a common access with specific privileges to the software instance. With a multitenant architecture, a software application is designed to provide every tenant a dedicated share of the instance.
+
 ## Implementation
 ### Method 1
 ![](https://i.imgur.com/v8A7ghp.png)
