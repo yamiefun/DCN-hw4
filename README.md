@@ -116,5 +116,3 @@ In my proposal, I didn't notice that the broadcast packet's destination MAC addr
 While implementing the method 2, I encountered some bugs.
 + Broadcast packets will only be received by one host, but not all hosts in the same tenant. I realized that modifing the `acitons` and `match` in the `packet-in` function won't really duplicate the broadcast packets, which means that the packets will only be sent to one destination even I tried to use a for loop to send the packet to different destinations.
 + When I tried to test my program with the `server` and `client` python scripts, I found that the clients will receive many duplication of the broadcast packet. Then I realized that I need to add some additional rules to solve this problem. (In code line 11~12)
-
-## Code
